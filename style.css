@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    color: #222222;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Superinfo */
+
+.superinfo-bg {
+
+    background: #122ab2;
+    color: white;
+
+}
+
+.superinfo {
+
+    display: flex;
+
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: .5rem;
+
+}
+
+.superinfo a, p {
+    margin: 0 .5rem .5rem .5rem;
+}
+
+.superinfo a {
+
+    color: white;
+
+}
+
+/* Menu ----------- */
+
+.menu-bg {
+    background: #2c70ff;
+}
+
+.menu {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu .logo a {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 0 .5rem;
+}
+
+.menu nav ul {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu nav a {
+    font-size:1.25rem;
+    display: block;
+    padding: .5rem;
+}
+
+.menu a:hover{
+    color:#122ab2
+}
+
+/* Intro ------------- */
+
+.intro {
+    font-size: 3rem;
+    line-height: 1;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+}
+
+/* About ----------------------------- */
+
+.about {
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.about-info {
+    flex: 2 1 300px;
+    margin: 0 .5rem;
+}
+
+.about-info h2 {
+
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.about-info p {
+    font-size:1.25rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color:#7c7c7c;
+}
+
+.about-image {
+    flex: 1 1 160px;
+    margin: 0 .5rem;
+}
+
+/* Products ----------------------------- */
+
+.products {
+    max-width: 80%;
+    margin: 5rem auto;
+}
+
+.products h2{
+
+    font-size: 2rem;
+
+    margin: 0 .5rem 5rem .5rem;
+
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+}
+
+.product-item {
+    flex: 1 1 175px;
+    margin: 1rem;
+    
+}
+
+.product-item h3 {
+
+    font-size: 3rem;
+    color: #a4a4a4;
+    background: #f7f7f7;
+    padding: 4rem 1.75rem;
+
+}
+
+.product-purple {
+
+    border-top: 8px solid #ae81ff;
+}
+
+.product-pink {
+
+    border-top: 8px solid #f9265e;
+}
+
+.product-blue {
+
+    border-top: 8px solid #66d9eb;
+}
+
+/* Price ------------- */
+
+.price {
+    background: #f7f7f7;
+    padding: 5rem;  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.item-price {
+
+    flex: 1 1 260px;
+
+    border: 4px solid white;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.item-price h3 {
+    font-size: 2rem;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.item-price span {
+    max-width: 300px;
+    margin: 2rem auto ;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 0 .5rem 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+
+}
+
+.item-price ul {
+
+    max-width: 300px;
+    margin: 2rem auto;
+    line-height: 1;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #7c7c7c;
+
+}
+
+.item-price a {
+    max-width: 300px;
+    display: block;
+    margin: 2rem auto;
+    border: 4px solid;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+
+    transition: filter .3s;
+}
+
+.item-price a:hover {
+    filter: blur(1px);
+}
+
+.item-price ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.item-price ul li::after {
+
+    content:'';
+    /* display: block; */
+    width:6px;
+    height: 6px;
+    clip-path: circle();
+    background: #2c70ff;
+}
+
+@media (max-width:800px) {
+
+    .price {
+
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+
+    .item-price:nth-child(3) {
+        order: -2;
+    }
+
+    .item-price:nth-child(2) {
+        order: -1;
+    }
+}
+
+/* Quality ------------- */
+
+.quality {
+
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.quality-item {
+
+    flex: 1 1 300px;
+    margin: 1.5rem .75rem;
+}
+
+.quality-item h3 {
+    font-size: 2rem;
+    color: #a4a4a4;
+    margin-bottom: 2rem;
+}
+
+.quality-item h3::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right:.5rem;
+    background: blue;
+}
+
+.quality-item p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+
+.quality-item:nth-of-type(3n+1) h3::before {
+    background: #ae81ff;
+}
+
+.quality-item:nth-of-type(3n+2) h3::before {
+    background: #f9265e;
+}
+
+.quality-item:nth-of-type(3n+3) h3::before {
+    background: #66d9eb;
+}
+
+/* Newsletter */
+
+
+.newsletter {
+    background: #f7f7f7;
+    padding: 5rem calc((100% - 80%)/2);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.newsletter-info {
+    flex: 1 1 200px;
+    margin: 0 .5rem;
+}
+
+.newsletter-info h2 {
+    font-size: 3rem;
+    color: #a4a4a4;
+}
+
+.newsletter-info p {
+
+    font-size: 1.25rem;
+    font-style: italic;
+    max-width: 220px;
+    color: #7c7c7c;
+    margin-bottom: .5rem;
+
+
+    
+}
+
+.newsletter-form {
+    flex: 2 1 260px;
+    margin: 0 .5rem;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    flex: 3 1 260px;
+    font-size: 1.25rem;
+    color: #7c7c7c;
+    font-style: italic;
+    font-family: 'Nunito', 'Helvetica', sans-serif;
+    border: 4px solid #2c70ff;
+    background: transparent;
+    padding: 10px;
+    margin: 0;
+    border-radius: none;
+    padding: 15px 10px;
+
+    
+
+}
+
+.newsletter-form button {
+    flex: 1 1 200px;
+    font-family: 'Nunito', 'Helvetica', sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform:uppercase;
+    background: #2c70ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin:0;
+    padding: 15px 10px;
+
+    transition: filter .2s;
+
+}
+
+@media (max-width: 600px) {
+
+    .newsletter-form button {
+
+        font-size: 1.5rem;
+    }
+
+}
+
+.newsletter-form button:hover {
+
+   filter:brightness(1.2);
+
+}
+
+.footer {
+    display:flex;
+    height: 200px;
+    background: #2c70ff;
+    align-items: center;
+
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+
+
