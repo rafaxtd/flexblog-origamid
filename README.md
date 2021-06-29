@@ -22,3 +22,4 @@ This is a Blog project designed to practice CSS Flexbox. Used tecnologies:
 - CSS
 
 
+## You can check under this [link](https://rafaxtd.github.io/flexblog-origamid/).
